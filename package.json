@@ -1,12 +1,20 @@
 {
   "name": "crypto-screener",
-  "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev:client": "astro dev",
+    "dev:server": "bun run server/index.ts",
+    "dev": "bun run dev:server & bun run dev:client",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.16.12"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.3.11",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
   }
 }
