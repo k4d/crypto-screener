@@ -1,3 +1,29 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  // Astro configuration
+  "extends": "astro/tsconfigs/strict",
+
+  // TypeScript configuration
+  "include": [".astro/types.d.ts", "src/**/*"],
+  "exclude": ["dist", ".astro"],
+
+  // Path Aliases
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    // Environment setup & latest features
+    "lib": ["ESNext"],
+    "moduleDetection": "force",
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "resolveJsonModule": true,
+
+    // Best practices
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true
+  }
 }
