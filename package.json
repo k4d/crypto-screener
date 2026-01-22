@@ -7,7 +7,10 @@
     "dev": "bun run dev:server & bun run dev:client",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "check": "biome check --apply-unsafe ."
   },
   "dependencies": {
     "@astrojs/svelte": "^7.2.5",
