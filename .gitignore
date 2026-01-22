@@ -43,3 +43,4 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Gemini related files
 GEMINI.md
+\n# Ignore package.json for Biome\npackage.json
